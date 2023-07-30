@@ -1,0 +1,24 @@
+const { compare } = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const { UnauthorizedError } = require('../../shared/errors');
+const config = require('../../shared/config');
+const User = require('../../mongomodels/User');
+
+const signInUser = async ({ username, password }) => {
+  const existing = await User.findOne({ username });
+  if (!existing) {
+    throw new UnauthorizedError('Incorrect username or password.');
+  }
+
+  const match = await compare(password, existing.password);
+
+  if (!match) {
+    throw new UnauthorizedError('Incorrect username or password.');
+  }
+
+  const token = jwt.sign({ user: { id: existing._id } }, config.jwt.secret);
+
+  return token;
+};
+
+module.exports = signInUser;
