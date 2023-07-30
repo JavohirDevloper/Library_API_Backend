@@ -1,0 +1,31 @@
+GET  http://localhost:5555/borrowers/register
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzU0NmI3MWM0Mzg4NmQzOTk1MTE0MyIsImlhdCI6MTY5MDY2NDA0NywiZXhwIjoxNjkwNzUwNDQ3fQ.BenjT9KueaZfru78Vg6zyRdsmhm0XBkz6D1m6wAVJEE
+
+{
+  "full_name": "Orzu",
+  "address": "Mirzayev",
+  "phone": "orzu2",
+  "password": "1234"
+}
+
+###
+GET http://localhost:5555/borrowers/
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzU0NmI3MWM0Mzg4NmQzOTk1MTE0MyIsImlhdCI6MTY5MDY2NDA0NywiZXhwIjoxNjkwNzUwNDQ3fQ.BenjT9KueaZfru78Vg6zyRdsmhm0XBkz6D1m6wAVJEE
+
+###
+PATCH http://localhost:5555/borrowers/64c58233aba93be7e59fdf5d
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzU0NmI3MWM0Mzg4NmQzOTk1MTE0MyIsImlhdCI6MTY5MDY2NDA0NywiZXhwIjoxNjkwNzUwNDQ3fQ.BenjT9KueaZfru78Vg6zyRdsmhm0XBkz6D1m6wAVJEE
+
+{
+  "full_name": "Quvonchbek",
+  "address": "Muysinov",
+  "phone": "quvonch",
+  "password": "12345"
+}
+
+###
+DELETE http://localhost:5555/borrowers/64c58233aba93be7e59fdf5d
+Content-Type: application/json

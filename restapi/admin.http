@@ -1,0 +1,61 @@
+POST http://localhost:5555/admins
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzViZDFjNjk1M2E0YzM4ZWQ3M2RlMyIsImlhdCI6MTY5MDY4OTE2NiwiZXhwIjoxNjkwNzc1NTY2fQ.QTrXzX1USUrCQEp12G93YpzYcbZGtA4bLo0AwBdmeIM
+
+{
+  "full_name": "Javohir Muhammadiyev",
+  "username":"devloper",
+  "address": "23 Uzumzor City",
+  "phone": "789-456-123",
+  "password":"1234"
+}
+###
+POST http://localhost:5555/login
+Content-Type: application/json
+
+{
+  "full_name": "Javohir Muhammadiyev",
+  "username":"devloper",
+  "address": "23 Uzumzor City",
+  "phone": "789-456-123",
+  "password":"1234"
+}
+
+###
+GET http://localhost:5555/admins
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzViZDFjNjk1M2E0YzM4ZWQ3M2RlMyIsImlhdCI6MTY5MDY4OTE2NiwiZXhwIjoxNjkwNzc1NTY2fQ.QTrXzX1USUrCQEp12G93YpzYcbZGtA4bLo0AwBdmeIM
+
+###
+GET http://localhost:5555/admins?q=javohir45
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzViZDFjNjk1M2E0YzM4ZWQ3M2RlMyIsImlhdCI6MTY5MDY4OTE2NiwiZXhwIjoxNjkwNzc1NTY2fQ.QTrXzX1USUrCQEp12G93YpzYcbZGtA4bLo0AwBdmeIM
+
+###
+GET http://localhost:5555/admins?filters={"is_deleted":true}
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzViZDFjNjk1M2E0YzM4ZWQ3M2RlMyIsImlhdCI6MTY5MDY4OTE2NiwiZXhwIjoxNjkwNzc1NTY2fQ.QTrXzX1USUrCQEp12G93YpzYcbZGtA4bLo0AwBdmeIM
+
+###
+GET http://localhost:5555/admins?sort=name:asc
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzViZDFjNjk1M2E0YzM4ZWQ3M2RlMyIsImlhdCI6MTY5MDY4OTE2NiwiZXhwIjoxNjkwNzc1NTY2fQ.QTrXzX1USUrCQEp12G93YpzYcbZGtA4bLo0AwBdmeIM
+
+###
+GET http://localhost:5555/admins?page=2&limit=1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzViZDFjNjk1M2E0YzM4ZWQ3M2RlMyIsImlhdCI6MTY5MDY4OTE2NiwiZXhwIjoxNjkwNzc1NTY2fQ.QTrXzX1USUrCQEp12G93YpzYcbZGtA4bLo0AwBdmeIM
+
+###
+GET http://localhost:5555/admins/64c5bd8602114e4f6fa19540
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzViZDFjNjk1M2E0YzM4ZWQ3M2RlMyIsImlhdCI6MTY5MDY4OTE2NiwiZXhwIjoxNjkwNzc1NTY2fQ.QTrXzX1USUrCQEp12G93YpzYcbZGtA4bLo0AwBdmeIM
+
+###
+PATCH  http://localhost:5555/admins/64c5bd8602114e4f6fa19540
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzViZDFjNjk1M2E0YzM4ZWQ3M2RlMyIsImlhdCI6MTY5MDY4OTE2NiwiZXhwIjoxNjkwNzc1NTY2fQ.QTrXzX1USUrCQEp12G93YpzYcbZGtA4bLo0AwBdmeIM
+Content-Type: application/json
+
+{
+  "name": "Kamol",
+  "address": "Yangi Choshtepa",
+  "phone": "+998912583469",
+  "password": "1234"
+}
+###
+DELETE http://localhost:5555/admins/64c546b71c43886d39951143
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzViZDFjNjk1M2E0YzM4ZWQ3M2RlMyIsImlhdCI6MTY5MDY4OTE2NiwiZXhwIjoxNjkwNzc1NTY2fQ.QTrXzX1USUrCQEp12G93YpzYcbZGtA4bLo0AwBdmeIM

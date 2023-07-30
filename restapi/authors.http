@@ -1,0 +1,11 @@
+PATCH  http://localhost:5555/authors/64c3e64ff9da5c51b0bd8fd9
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzViZDFjNjk1M2E0YzM4ZWQ3M2RlMyIsImlhdCI6MTY5MDY4MTQwOCwiZXhwIjoxNjkwNzY3ODA4fQ.p_f8-heImabymCtz85SG2LISRRpceSWjuHVCWf6YlTU
+
+{
+  "name": "Orzu Mirzayev"
+}
+
+###
+DELETE http://localhost:5555/authors/64c3e64ff9da5c51b0bd8fd9
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzViZDFjNjk1M2E0YzM4ZWQ3M2RlMyIsImlhdCI6MTY5MDY4MTQwOCwiZXhwIjoxNjkwNzY3ODA4fQ.p_f8-heImabymCtz85SG2LISRRpceSWjuHVCWf6YlTU

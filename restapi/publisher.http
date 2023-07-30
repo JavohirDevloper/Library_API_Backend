@@ -1,0 +1,41 @@
+POST http://localhost:5555/publishers
+Content-Type: application/json
+
+{
+  "name": "Imronbek Hoshimov",
+  "address": "23 Anor City",
+  "phone": "998972437808"
+}
+
+###
+GET http://localhost:5555/publishers
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzU0NmI3MWM0Mzg4NmQzOTk1MTE0MyIsImlhdCI6MTY5MDY2NDA0NywiZXhwIjoxNjkwNzUwNDQ3fQ.BenjT9KueaZfru78Vg6zyRdsmhm0XBkz6D1m6wAVJEE
+
+###
+GET http://localhost:5555/publishers?q=javohir
+###
+
+GET http://localhost:5555/publishers?filters={"is_deleted":true}
+
+
+###
+GET http://localhost:5555/publisher?sort=name:asc
+
+###
+GET http://localhost:5555/publisher?page=2&limit=10
+
+###
+GET http://localhost:5555/publishers/64c3e7aef9da5c51b0bd8ff7
+
+###
+PATCH  http://localhost:5555/publishers/64c3e7aef9da5c51b0bd8ff7
+Content-Type: application/json
+
+{
+  "name": "Kamol",
+  "address": "Chilonzor 11 dom",
+  "phone": "+998 90 031 29 27"
+}
+
+###
+DELETE http://localhost:5555/publishers/64c3e7aef9da5c51b0bd8ff7

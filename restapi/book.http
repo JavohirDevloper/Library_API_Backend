@@ -1,0 +1,27 @@
+POST http://localhost:5555/books
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzViZDFjNjk1M2E0YzM4ZWQ3M2RlMyIsImlhdCI6MTY5MDY4OTE2NiwiZXhwIjoxNjkwNzc1NTY2fQ.QTrXzX1USUrCQEp12G93YpzYcbZGtA4bLo0AwBdmeIM
+
+{
+  "title": "Millon the best",
+  "publisher": 1,
+  "author": 2,
+  "copies": 2
+}
+###
+GET http://localhost:5555/books/
+###
+
+###
+GET http://localhost:5555/books/64c5ba9f60b7a666d68691c2
+
+###
+PATCH http://localhost:5555/books/64c5ba6d60b7a666d68691ae
+Content-Type: application/json
+
+{
+    "title": "Bir kun mehmon bulib kel"
+}
+
+###
+DELETE http://localhost:5555/books/64c5ba6d60b7a666d68691ae

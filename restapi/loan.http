@@ -1,0 +1,9 @@
+POST http://localhost:5555/loan
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzViZDFjNjk1M2E0YzM4ZWQ3M2RlMyIsImlhdCI6MTY5MDY4OTE2NiwiZXhwIjoxNjkwNzc1NTY2fQ.QTrXzX1USUrCQEp12G93YpzYcbZGtA4bLo0AwBdmeIM
+Content-Type: application/json
+
+{
+    "book": "64c5edee5c1f98a124db09da",
+    "borrowers":"64c5d4758d18a3b8a96fe466",
+    "due_date": 10
+}
